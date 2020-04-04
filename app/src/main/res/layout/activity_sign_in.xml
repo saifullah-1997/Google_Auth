@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInAct">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="enter_your_email_id"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:maxLength="20"
+        android:id="@+id/EmailET"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/enter_your_password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:id="@+id/passwordET"
+        android:layout_below="@id/EmailET"
+        />
+
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordET"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/signin" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup_btn"
+        android:layout_marginTop="20dp"
+        android:text="Signout"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/signout_btn"
+        android:visibility="invisible"
+        />
+
+    <ProgressBar
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/signUpProgressBar"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/Forgetpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signout_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-22dp"
+        android:layout_marginEnd="215dp"
+        android:text="Forget Password?"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
